@@ -131,23 +131,29 @@
     <!-- Welcome Area Starts -->
     <section class="welcome-area section-padding3">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-5 align-self-center">
-                    <div class="welcome-img">
-                        <img src="assets/images/welcome.png" alt="">
+            <div class="row" style="display: flex; align-items: stretch;">
+                <!-- Make sure the row stretches to fill the height -->
+                <div class="col-lg-5" style="display: flex; align-items: center;">
+                    <!-- Ensure the image is vertically centered -->
+                    <div class="welcome-img"
+                        style="border-radius: 15px; overflow: hidden; border: 2px solid #ddd; width: 100%;">
+                        <img src="assets/images/welcome.png" alt="" style="width: 100%; height: auto;">
                     </div>
                 </div>
-                <div class="col-lg-7">
+
+                <div class="col-lg-7" style="display: flex; align-items: center;">
+                    <!-- Ensure the text is vertically centered -->
                     <div class="welcome-text mt-5 mt-lg-0">
                         <h2>Welcome to Lynnwood Medical Clinic</h2>
                         <p class="pt-3">Located in the heart of the Millcan/Ogden/Lynnwood neighbourhood in SE Calgary,
                             we are a family medicine clinic dedicated to providing comprehensive, compassionate care for
                             you and your loved ones.
-
-                        </p>At Lynnwood Medical Clinic, your health and well-being are our top priority. We offer a
-                        range of primary care services in a friendly, comfortable environment, ensuring personalized
-                        care for every patient.</p>
-                        <a href="#" class="template-btn mt-3">learn more</a>
+                        </p>
+                        <p>At Lynnwood Medical Clinic, your health and well-being are our top priority. We offer a range
+                            of primary care services in a friendly, comfortable environment, ensuring personalized care
+                            for every patient.</p>
+                        <a href="https://chat.mikatahealth.com/1syy9nMPtoiPLN" class="template-btn mt-3">Book
+                            Appointment</a>
                     </div>
                 </div>
             </div>
@@ -248,8 +254,10 @@
             <div class="row">
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-doctor mb-4 mb-lg-0">
-                        <div class="doctor-img">
-                            <img src="assets/images/doctor1.jpg" alt="" class="img-fluid">
+                        <div class="doctor-img"
+                            style="overflow: hidden; transition: transform 0.3s ease; cursor: pointer;">
+                            <img src="assets/images/doctor1.jpg" alt="" class="img-fluid"
+                                style="width: 100%; height: auto; transition: transform 0.3s ease;">
                         </div>
                         <div class="content-area">
                             <div class="doctor-name text-center">
@@ -257,35 +265,37 @@
                                 <h6>Family Medicine Specialist</h6>
                             </div>
                             <div class="doctor-text text-center">
-                                <p>Dr is dedicated to providing compassionate care, ensuring every patient feels
-                                    heard and supported..
-                                </p>
+                                <p>Dr is dedicated to providing compassionate care, ensuring every patient feels heard
+                                    and supported..</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-doctor mb-4 mb-lg-0">
-                        <div class="doctor-img">
-                            <img src="assets/images/doctor1.jpg" alt="" class="img-fluid">
+                        <div class="doctor-img"
+                            style="overflow: hidden; border-radius: 15px; transition: transform 0.3s ease; cursor: pointer;">
+                            <img src="assets/images/doctor1.jpg" alt="" class="img-fluid"
+                                style="width: 100%; height: auto; transition: transform 0.3s ease;">
                         </div>
                         <div class="content-area">
                             <div class="doctor-name text-center">
-                                <h3>Dr M. O M.D </h3>
-                                <h6>family Medicine</h6>
+                                <h3>Dr M. O M.D</h3>
+                                <h6>Family Medicine</h6>
                             </div>
                             <div class="doctor-text text-center">
                                 <p>Dr. is dedicated to providing compassionate care, ensuring every patient feels heard
-                                    and supported.
-                                </p>
+                                    and supported.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-doctor mb-4 mb-sm-0">
-                        <div class="doctor-img">
-                            <img src="assets/images/doctor1.jpg" alt="" class="img-fluid">
+                        <div class="doctor-img"
+                            style="overflow: hidden; border-radius: 15px; transition: transform 0.3s ease; cursor: pointer;">
+                            <img src="assets/images/doctor1.jpg" alt="" class="img-fluid"
+                                style="width: 100%; height: auto; transition: transform 0.3s ease;">
                         </div>
                         <div class="content-area">
                             <div class="doctor-name text-center">
@@ -294,26 +304,26 @@
                             </div>
                             <div class="doctor-text text-center">
                                 <p>Dr. is dedicated to providing compassionate care, ensuring every patient feels heard
-                                    and supported.
-                                </p>
+                                    and supported.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-doctor">
-                        <div class="doctor-img">
-                            <img src="assets/images/doctor1.jpg" alt="" class="img-fluid">
+                        <div class="doctor-img"
+                            style="overflow: hidden; border-radius: 15px; transition: transform 0.3s ease; cursor: pointer;">
+                            <img src="assets/images/doctor1.jpg" alt="" class="img-fluid"
+                                style="width: 100%; height: auto; transition: transform 0.3s ease;">
                         </div>
                         <div class="content-area">
                             <div class="doctor-name text-center">
-                                <h3>Dr. A. Z M.D </h3>
+                                <h3>Dr. A. Z M.D</h3>
                                 <h6>Family Medicine Specialist</h6>
                             </div>
                             <div class="doctor-text text-center">
                                 <p>Dr. is dedicated to providing compassionate care, ensuring every patient feels heard
-                                    and supported.
-                                </p>
+                                    and supported.</p>
                             </div>
                         </div>
                     </div>
@@ -321,6 +331,20 @@
             </div>
         </div>
     </section>
+
+    <!-- Inline CSS for hover effect -->
+    <style>
+        .doctor-img:hover {
+            transform: scale(1.05);
+            /* Pop-out effect */
+        }
+
+        .doctor-img img:hover {
+            transform: scale(1.05);
+            /* Ensures the image scales correctly */
+        }
+    </style>
+
     <!-- Clinic Dotor Area Starts -->
 
     <!-- Hotline Area Starts -->
@@ -347,10 +371,10 @@
                             <h3 class="mb-0">Lynnwood</h3>
                             <p>MedicalClinic</p>
                             <ul>
-                                <li class="mb-2"><a href="#">Home</a></li>
-                                <li class="mb-2"><a href="#">Our Services</a></li>
-                                <li class="mb-2"><a href="#">Contact</a></li>
-                                <li><a href="#">FAQs</a></li>
+                                <li class="mb-2"><a href="index.html">Home</a></li>
+                                <li class="mb-2"><a href="services.html">Our Services</a></li>
+                                <li class="mb-2"><a href="contact.html">Contact</a></li>
+                                <li><a href="faq.html">FAQs</a></li>
                             </ul>
                         </div>
                     </div>
